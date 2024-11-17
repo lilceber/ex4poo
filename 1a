@@ -1,0 +1,41 @@
+public class Funcionario {
+
+    private String nome;
+    private String dataAdmissao; 
+    private float salario;
+
+
+    public Funcionario(String nome, String dataAdmissao, float salario) {
+        this.nome = nome;
+        this.dataAdmissao = dataAdmissao;
+        this.salario = salario;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getDataAdmissao() {
+        return dataAdmissao;
+    }
+
+    public void setDataAdmissao(String dataAdmissao) {
+        this.dataAdmissao = dataAdmissao;
+    }
+
+    public float getSalario() {
+        return salario;
+    }
+
+    public void setSalario(float salario) {
+        this.salario = salario;
+    }
+
+    public void tirarFerias() {
+        System.out.println(" + nome + " vai tirar férias de 30 dias.");
+    }
+}
