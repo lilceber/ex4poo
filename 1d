@@ -1,0 +1,16 @@
+public class Demonstracao {
+
+    public static void main(String[] args) {
+        Funcionario funcionario1 = new Funcionario("Fernando", "2024-02-20", 1400.00);
+        Funcionario funcionario2 = new Funcionario("Olívia", "2015-07-14", 2000.00);
+
+        System.out.println("Dados: ");
+        System.out.println(funcionario1);
+        System.out.println(funcionario2);
+        System.out.println();
+
+        System.out.println("Férias: ");
+        funcionario1.tirarFerias();       
+        funcionario2.tirarFerias(20);     
+    }
+}
