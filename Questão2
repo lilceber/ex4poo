@@ -1,0 +1,39 @@
+public class Relogio {
+
+    private int hora;
+    private int minuto;
+    private int segundo;
+
+    public void inicializar(int hora, int minuto, int segundo) {
+        this.hora = hora;
+        this.minuto = minuto;
+        this.segundo = segundo;
+    }
+
+    public void inicializar(int hora, int minuto) {
+        inicializar(hora, minuto, 1);
+    }
+
+    public void inicializar(int hora) {
+        inicializar(hora, 1, 1);
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%02d:%02d:%02d", hora, minuto, segundo);
+    }
+
+    public static void main(String[] args) {
+        Relogio relogio1 = new Relogio();
+        Relogio relogio2 = new Relogio();
+        Relogio relogio3 = new Relogio();
+
+        relogio1.inicializar(10, 20, 30);
+        relogio2.inicializar(2, 4);
+        relogio3.inicializar(15);
+
+        System.out.println("Relógio 1: " + relogio1);
+        System.out.println("Relógio 2: " + relogio2);
+        System.out.println("Relógio 3: " + relogio3);
+    }
+}
